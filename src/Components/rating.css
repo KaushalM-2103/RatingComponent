@@ -1,0 +1,82 @@
+#root {
+  --orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.card_body {
+  display: grid;
+  justify-content: left;
+  width: 25rem;
+  background-image: linear-gradient(to bottom, #232833 ,#171E28);
+  padding: 2rem 2rem;
+}
+
+.StarIconBody {
+  display: table;
+  padding: 1rem;
+  width: fit-content;
+  background-color: hsl(211, 20%, 21%);
+}
+.StarIconBody .starIcn {
+  display: table-cell;
+}
+h1 {
+  font-size: 1.7em;
+  color: var(--White);
+}
+.feedbackTxt {
+  color: var(--MediumGrey);
+  font-size: 90%;
+  font-weight: 400;
+}
+ul {
+  width: fit-content;
+  /* align-content: space-evenly; */
+}
+ul li {
+  width: 3rem;
+  line-height: 3rem;
+  font-weight: 500;
+  list-style: none;
+  background-color: #232833;
+  font-size: 1.1rem;
+  color: var(--LightGrey);
+  transition: all  .25s;
+}
+ul li:hover {
+  cursor: pointer;
+  background-color: var(--LightGrey);
+  color: var(--White);
+}
+
+ul li:active{
+  background-color: var(--orange);
+  color: var(--White);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--orange);
+  color: var(--White);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+}
+button:hover {
+  background-color: var(--White);
+  color: var(--orange);
+}

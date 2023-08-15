@@ -1,0 +1,42 @@
+#root {
+  --orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.thankYou_card_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: fit-content;
+  background-image: linear-gradient(to bottom, #232833, #171e28);
+  padding: 2rem 2rem;
+}
+.logo {
+  width: 10rem;
+}
+
+.rates {
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  background-color: var(--DarkBlue);
+  color: #c57b44;
+}
+
+h1 {
+  color: var(--White);
+  font-size: 1.7rem;
+}
+.thankYou_txt {
+  font-size:90%;
+  color: var(--MediumGrey);
+}
